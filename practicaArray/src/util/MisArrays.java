@@ -45,4 +45,26 @@ public abstract class MisArrays {
 	            return notas[n / 2];
 	        }
 	    }
+/**
+ * 
+ * @param	Método que recibe un array con las notas	
+ * 
+ * 
+ * @return	Método que devuelve la maxima de las notas introducidas en el array
+ */
+		public static int maximaNota(int[] notas) {
+		        for (int nota : notas) {
+		            if (nota < 0 || nota > 10) {
+		                throw new IllegalArgumentException("Las notas deben estar entre 0 y 10.");
+		            }
+		        }
+		        
+		        int max = notas[0];
+		        for (int nota : notas) {
+		            if (nota > max) {
+		                max = nota;
+		            }
+		        }
+		        return max;
+		    }
 }
