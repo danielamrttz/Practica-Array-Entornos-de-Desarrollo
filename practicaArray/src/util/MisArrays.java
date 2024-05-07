@@ -69,8 +69,10 @@ public abstract class MisArrays {
 		    }
 /**
  * 
- * @param notas
- * @return
+ * @param	Método que recibe un array con las notas	
+ * 
+ * 
+ * @return	Método que devuelve la minima de las notas introducidas en el array	
  */
 		 public static int minimaNota(int[] notas) {
 		        for (int nota : notas) {
