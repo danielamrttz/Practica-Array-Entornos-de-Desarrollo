@@ -17,7 +17,7 @@ class TestMediana {
 	@BeforeAll
 	static void setup() {
 		 arrayCorrecto1 = new int[] {2, 1, 3, 5,9};
-		 arrayCorrecto2 = new int[] {2, 5, 1, 9,7};
+		 arrayCorrecto2 = new int[] {2, 6, 1, 9,7};
 	     arrayIncorrecto = new int[] {7, 11, 6, 9, 2}; 
 		
 		
@@ -31,7 +31,7 @@ class TestMediana {
     }
 	@Test
     public void testMedianaValido2() {
-		float resultadoEsperado=5f;
+		float resultadoEsperado=6f;
         float resultadoObtenido = MisArrays.medianaNotas(arrayCorrecto2);
         assertEquals(resultadoEsperado,resultadoObtenido); 
     }

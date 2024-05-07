@@ -67,4 +67,24 @@ public abstract class MisArrays {
 		        }
 		        return max;
 		    }
+/**
+ * 
+ * @param notas
+ * @return
+ */
+		 public static int minimaNota(int[] notas) {
+		        for (int nota : notas) {
+		            if (nota < 0 || nota > 10) {
+		                throw new IllegalArgumentException("Las notas deben estar entre 0 y 10.");
+		            }
+		        }
+		        
+		        int min = notas[0];
+		        for (int nota : notas) {
+		            if (nota < min) {
+		                min = nota;
+		            }
+		        }
+		        return min;
+		    }
 }
